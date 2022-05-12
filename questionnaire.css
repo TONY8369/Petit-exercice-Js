@@ -1,0 +1,615 @@
+/* Mise en page du body*/
+
+body
+{
+    background-color:#f3f3f3;
+    max-height: 1745px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.quizz
+{
+    background-color: #f3f3f3;
+    font-family: sans-serif;
+}
+/* Mise en page du h1*/
+.titre
+{
+    background-color: #f3f3f3;
+}
+/* Mise en page du questionnaire 1 */
+.quizz_un
+{
+    background-color: #f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_un
+{
+    background-color: white;
+    width: 80%;
+    height: 20vh;
+    margin-top: 50px;
+}
+/* Mise en page du cercle et création du cercle*/
+.cercle
+{
+    background-color: white;
+    margin-top: 50px;
+    padding-top: 14px;
+    padding-left: 10px;
+    height: 74%;
+}
+.cercle_un
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background: #008cba;
+    text-align: center;
+    color: white;
+    line-height: 120px;
+    font-size: 140%;
+}
+/* Création des ul et li en alphabet avec une couleur de fond*/
+ul
+{
+    content:counter(chapter, Upper-alpha);
+    counter-reset: listStyle;
+}
+ul li 
+{
+    margin-left: 1em;
+    counter-increment: listStyle;
+    cursor: pointer;
+}
+ul li::before 
+{
+    content: counter(listStyle, Upper-alpha);
+    padding: 2px 5px 2px 6px;
+    margin-right: 8px;
+}
+li::before
+{
+	vertical-align: center;
+	background: #f3f3f3;
+	width: 60px;
+    height: 60px;
+	border-radius: 220px;
+	font-weight: bold;
+	font-size: 1.2em;
+    cursor: pointer;
+    color: black;
+}
+li:nth-child(1)
+{
+    padding-top: 2px;
+    padding-bottom: 15px;
+}
+li:nth-child(2)
+{
+    padding-bottom: 15px;
+}
+/* Modification javascript*/
+.active::before
+{
+    background: aqua;
+}
+/* Réponses justes*/
+.active.vrai
+{
+    color: green;
+}
+.vrai::before
+{
+    background: green;
+}
+.vrai::after
+{
+    content: " (Juste)";
+}
+/* Reponses fausses*/
+.active.faux
+{
+    color: red;
+    text-decoration: line-through;
+}
+.faux::before
+{
+    background: red;
+}
+.faux::after
+{
+    content:"  (faux)"
+}
+/* affichage du score en haut de la page*/
+.score
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.active#resultats
+{
+    width: 30%;
+    text-align: center;
+    padding-top: 30px;
+    display: block;
+    font-size: 20px;
+}
+#resultats
+{
+    padding-top: 30px;
+    width: 30px;
+    text-align: center;
+    display: none;
+    font-size: 20px;
+    color:black;
+}
+/* Affichage de ma correction */
+.correctif
+{
+    background-color:#f3f3f3;
+    width: 100%;
+    color: blueviolet;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+}
+.active.correctif
+{
+    display: block;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_un
+{
+    background-color: white;
+    width: 50%;
+    margin-left: 5px;
+}
+.liste_un
+{
+    background-color: white;
+    width: 50%;
+    height: 14vh;
+    margin-left: 10px;
+}
+/* Mise en page du questionnaire 2 */
+.quizz_deux
+{
+    background-color:#f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_deux
+{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_deux
+{
+    background-color: white;
+    width: 50%;
+    margin-left: 5px;
+}
+.liste_deux
+{
+    background-color: white;
+    width: 55%;
+    height: 13vh;
+    margin-left: 10px;
+}
+/* Mise en page du questionnaire 3 */
+.quizz_trois
+{
+    background-color: #f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_trois
+{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_trois
+{
+    background-color:white;
+    width: 50%;
+    margin-left: 5px;
+}
+.liste_trois
+{
+    background-color: white;
+    width: 70%;
+    height: 13vh;
+    margin-left: 10px;
+}
+/* Mise en page du questionnaire 4*/
+.quizz_quatre
+{
+    background-color: #f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_quatre
+{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_quatre
+{
+    background-color: white;
+    width: 50%;
+    margin-left: 5px;
+}
+.liste_quatre
+{
+    background-color: white;
+    width: 70%;
+    height: 13vh;
+    margin-left: 10px;
+}
+/* Mise en page du questionnaire 5 */
+.quizz_cinq
+{
+    background-color: #f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_cinq
+{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_cinq
+{
+    background-color: white;
+    width: 50%;
+    margin-left: 5px;
+}
+.liste_cinq
+{
+    background-color: white;
+    width: 70%;
+    height: 13vh;
+    margin-left: 10px;
+}
+/* Mise en page du questionnaire 6*/
+.quizz_six
+{
+    background-color: #f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_six
+{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_six
+{
+    background-color: white;
+    width: 70%;
+    margin-left: 5px;
+}
+.liste_six
+{
+    background-color: white;
+    width: 90%;
+    height: 11vh;
+    margin-left: 10px;
+}
+/* Mise en page du questionnaire 7*/
+.quizz_sept
+{
+    background-color: #f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_sept
+{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_sept
+{
+    background-color: white;
+    width: 70%;
+    margin-left: 5px;
+}
+.liste_sept
+{
+    background-color: white;
+    width: 80%;
+    height: 13vh;
+    margin-left: 10px;
+}
+/* Mise en page du questionnaire 8 */
+.quizz_huit
+{
+    background-color: #f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_huit
+{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_huit
+{
+    background-color: white;
+    width: 70%;
+    margin-left: 5px;
+}
+.liste_huit
+{
+    background-color: white;
+    width: 80%;
+    height: 11vh;
+    margin-left: 10px;
+}
+/* Mise en page du questionnaire 9*/
+.quizz_neuf
+{
+    background-color: #f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_neuf
+{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_neuf
+{
+    background-color: white;
+    width: 70%;
+    margin-left: 5px;
+}
+.liste_neuf
+{
+    background-color: white;
+    width: 92%;
+    height: 13vh;
+    margin-left: 10px;
+}
+/* Mise en page du questionnaire 10 */
+.quizz_dix
+{
+    background-color: #f3f3f3;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteneur_dix
+{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+/* Mise en page (positionnement) des uls et li*/
+.titre_dix
+{
+    background-color:white;
+    width: 90%;
+}
+.liste_dix
+{
+    background-color: white;
+    width: 92%;
+    height: 13vh;
+    margin-left: 10px;
+}
+/* Mise en page de l'option valider*/
+.valider
+{
+    background-color: #f3f3f3;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+.check
+{
+    text-align: center;
+    vertical-align:top;
+	background: silver;
+	width: 250px;
+    height: 27px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 1.2em;
+    color: white;
+    padding-top: 4px;
+}
+/* javascript de check*/
+.active.check
+{
+    background:orangered ;
+    cursor: pointer;
+}
+
+/*rendre le site parfaitement responsive */
+
+@media screen and (max-width: 600px)
+{
+    .titre{
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        margin-left: 80px;
+    }
+    .cercle{
+        height: 28vh;
+    }
+    .cercle_un{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 40px;
+        line-height: 50px;
+    }
+    .quizz_un{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_un{
+        height: 30vh;
+        font-size: 15px;
+        width:85%;
+    }
+    .titre_un{
+        text-align: center;
+        width: 50%;
+    }
+    .quizz_deux{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_deux{
+        height: 30vh;
+        font-size: 14px;
+        width:85%;
+    }
+    .titre_deux{
+        text-align: center;
+        width:50%;
+    }
+    .quizz_trois{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_trois{
+        height: 30vh;
+        font-size: 14px;
+        width:85%;
+    }
+    .titre_trois{
+        text-align: center;
+        width:50%;
+    }
+    .quizz_quatre{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_quatre{
+        height: 30vh;
+        font-size: 14px;
+        width:85%;
+    }
+    .titre_quatre{
+        text-align: center;
+        width:50%;
+    }
+    .quizz_cinq{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_cinq{
+        height: 30vh;
+        font-size: 14px;
+        width:85%;
+    }
+    .titre_cinq{
+        text-align: center;
+        width:50%;
+    }
+    .quizz_six{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_six{
+        height: 30vh;
+        font-size: 14px;
+        width:85%;
+    }
+    .titre_six{
+        text-align: center;
+        width:70%;
+    }
+    .quizz_sept{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_sept{
+        height: 30vh;
+        font-size: 14px;
+        width:85%;
+    }
+    .titre_sept{
+        text-align: center;
+        width:50%;
+    }
+    .quizz_huit{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_huit{
+        height: 30vh;
+        font-size: 14px;
+        width:85%;
+    }
+    .titre_huit{
+        text-align: center;
+        width:70%;
+    }
+    .quizz_neuf{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_neuf{
+        height: 30vh;
+        font-size: 14px;
+        width:85%;
+    }
+    .titre_neuf{
+        text-align: center;
+        width:70%;
+    }
+    .quizz_dix{
+        width:100%;
+        height: 40vh;
+    }
+    .conteneur_dix{
+        height: 30vh;
+        font-size: 14px;
+        width:85%;
+    }
+    .titre_dix{
+        text-align: center;
+        width:70%;
+    }
+    .liste_neuf{
+        width: 80%;
+    }
+    .liste_dix{
+        width: 80%;
+    }
+}

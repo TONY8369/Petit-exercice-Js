@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questionnaire.css">
+    <title>Questionnaire à choix multiples</title>
+</head>
+<body>
+    <div id="page">
+        <div class="quizz">
+            <div class="score">
+                <h1 class="titre">Quiz CSS débutant</h1>
+                <span id="resultats">0/10</span>
+            </div>
+            <div class="quizz_un">
+                <div class="cercle">
+                    <p class="cercle_un">1</p>
+                </div>
+                <div class="conteneur_un">
+                    <p class="titre_un"><strong>Que signifie CSS</strong></p>
+                    <ul class="liste_un"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="1" data-valeur-type="true">Cascading Style Sheets</li>
+                        <li id="reponse_deux"data-choix-type="1" data-valeur-type="false">Create Simple Samples</li>
+                        <li id="reponse_trois"data-choix-type="1" data-valeur-type="false">Choucroute et Saucisses d'Alsace</li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="correction">
+                    <p class="correctif">CSS est l'abréviation de Cascading Style Sheets (Feuilles de Style en Cascade).</p>
+            </div>  
+            <div class="quizz_deux">
+                <div class="cercle">
+                    <p class="cercle_un">2</p>
+                </div>
+                <div class="conteneur_deux">
+                    <p class="titre_deux"><strong>A quoi sert le language CSS</strong></p>
+                    <ul class="liste_deux"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="2" data-valeur-type="false">A réaliser des pages dynamiques</li>
+                        <li id="reponse_deux"data-choix-type="2" data-valeur-type="true">A ajouter du style aux documents web</li>
+                        <li id="reponse_trois"data-choix-type="2" data-valeur-type="false">A insérer du contenu dans une page internet</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="correction">
+                <p class="correctif">Le CSS est un langage simple qui sert à styler (polices, couleurs, positions, dimensions ...) les documents internet.</p>
+            </div>
+            <div class="quizz_trois">
+                <div class="cercle">
+                    <p class="cercle_un">3</p>
+                </div>
+                <div class="conteneur_trois">
+                    <p class="titre_trois"><strong>Pourquoi utilise-t-on généralement du CSS</strong></p>
+                    <ul class="liste_trois"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="3" data-valeur-type="false">Pour se compliquer la vie bien sur</li>
+                        <li id="reponse_deux"data-choix-type="3" data-valeur-type="true">Pour séparer le contenu et la présentation des documents web</li>
+                        <li id="reponse_trois"data-choix-type="3" data-valeur-type="false">Cela permet de faire de plus jolis dégradés de couleurs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="correction">
+                <p class="correctif"> Le CSS est généralement utilisé pour séparer le contenu (HTML, XHTML, XML) de sa mise en forme. 
+                    Cela permet une maintenance simplifiée selon qu'il faille en modifier son aspect ou son contenu.
+                </p>
+            </div>
+            <div class="quizz_quatre">
+                <div class="cercle">
+                    <p class="cercle_un">4</p>
+                </div>
+                <div class="conteneur_quatre">
+                    <p class="titre_quatre"><strong>Ou est-il conseillé de placer le code CSS</strong></p>
+                    <ul class="liste_quatre"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="4" data-valeur-type="false">Dans le &lt;body>, c'te question</li>
+                        <li id="reponse_deux"data-choix-type="4" data-valeur-type="false">Entre les balises &lt;head>, c'est bien plus propre</li>
+                        <li id="reponse_trois"data-choix-type="4" data-valeur-type="true">Dans un fichier externe utilisable pour plusieurs pages</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="correction">
+                <p class="correctif">Bien que les 3 possibilités évoquées soient possibles, il est vivement déconseillé de placer le code CSS à l'intérieur du HTML dans le body.
+                    Quitte à l'inclure dans le fichier internet, il est plus intéressant de le placer dans les balises head.
+                    Cependant, pour que les possibilités offertes par le CSS soient pleinement exploitées, l'utilisation d'un fichier externe est recommandé. 
+                    En effet, un même fichier pourra alors servir pour plusieurs pages en même temps et ainsi éviter la redondance inutile.
+                </p>
+                </div>
+            <div class="quizz_cinq">
+                <div class="cercle">
+                    <p class="cercle_un">5</p>
+                </div>
+                <div class="conteneur_cinq">
+                    <p class="titre_cinq"><strong>Dans quoi définit-on les déclarations CSS</strong></p>
+                    <ul class="liste_cinq"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="5" data-valeur-type="false">Entre deux crochets sépareés par des tirets[...-...]</li>
+                        <li id="reponse_deux"data-choix-type="5" data-valeur-type="false">Entre deux guillemets séparées par des slashs ".../..."</li>
+                        <li id="reponse_trois"data-choix-type="5" data-valeur-type="true">Entre deux accolades séparés par des points-virgules {...;...}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="correction">
+                <p class="correctif"> Un bloc de déclarations CSS est délimitée par des accolades. 
+                    En son sein, chaque déclaration (couple "propriété : valeur") est ponctuée par un point-virgule.
+                </p>
+            </div>
+            <div class="quizz_six">
+                <div class="cercle">
+                    <p class="cercle_un">6</p>
+                </div>
+                <div class="conteneur_six">
+                    <p class="titre_six"><strong>Dans la règle suivante, quel élément deviendra rouge ? strong#intro {background-color: red;}</strong></p>
+                    <ul class="liste_six"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="6" data-valeur-type="false">L'élément dont l'id est "intro" et qui est contenu dans un élément &lt;strong></li>
+                        <li id="reponse_deux"data-choix-type="6" data-valeur-type="true">L'élément &lt;strong> dont l'id est "intro"</li>
+                        <li id="reponse_trois"data-choix-type="6" data-valeur-type="false"> Tous les éléments &lt;strong> contenus dans un élément dont l'id est "intro"</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="correction">
+                <p class="correctif"> Puisqu'il n'y a pas d'espace entre "strong" et "#intro", cela signifie qu'il s'agit du même élément. 
+                    Il n'y a pas de notion de contenant et de contenu ici. 
+                    La règle s'applique à un seul élément : l'élément &lt;strong> dont l'id est "intro".
+                </p>
+            </div>
+            <div class="quizz_sept">
+                <div class="cercle">
+                    <p class="cercle_un">7</p>
+                </div>
+                <div class="conteneur_sept">
+                    <p class="titre_sept"><strong>Quel élément sépare la propriété de sa valeur ?</strong></p>
+                    <ul class="liste_sept"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="7" data-valeur-type="false">Le signe espace ( )</li>
+                        <li id="reponse_deux"data-choix-type="7" data-valeur-type="false">Le signe égal (=)</li>
+                        <li id="reponse_trois"data-choix-type="7" data-valeur-type="true">Le signe deux points (:)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="correction">
+                <p class="correctif"> La propriété font-size est séparée de sa valeur (exprimée ici en unité variable -em) 
+                    par deux points 
+                </p>
+            </div>
+            <div class="quizz_huit">
+                <div class="cercle">
+                    <p class="cercle_un">8</p>
+                </div>
+                <div class="conteneur_huit">
+                    <p class="titre_huit"><strong>Pourquoi est-il d'usage de sauter une ligne entre chaque déclaration ?</strong></p>
+                    <ul class="liste_huit"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="8" data-valeur-type="false">Pour rien du tout</li>
+                        <li id="reponse_deux"data-choix-type="8" data-valeur-type="false">Pour que le code soit bien interprété par les navigateurs</li>
+                        <li id="reponse_trois"data-choix-type="8" data-valeur-type="true">Pour rendre le code plus lisible et la maintenance plus facile</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="correction">
+                <p class="correctif"> Il n'est pas nécessaire de sauter des ligne ou 
+                    d'indenter votre code.
+                </p>
+            </div>
+            <div class="quizz_neuf">
+                <div class="cercle">
+                    <p class="cercle_un">9</p>
+                </div>
+                <div class="conteneur_neuf">
+                    <p class="titre_neuf"><strong>A quoi sert le sélecteur de classe : h2.nomDeClasse ?</strong></p>
+                    <ul class="liste_neuf"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="9" data-valeur-type="false">Ah bon ... C'est censé servir à quelque chose ?</li>
+                        <li id="reponse_deux"data-choix-type="9" data-valeur-type="false">A créer une ancre sur la balise &lt;h2></li>
+                        <li id="reponse_trois"data-choix-type="9" data-valeur-type="true">A définir différentes propriétés pour l'élément &lt;h2> dont la classe est "nomDeClasse".</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="correction">
+                <p class="correctif"> Le sélecteur de classe different permet de modifier l'apparence des titres de niveau 2 dont la class est "different" 
+                    et uniquement ceux possédant cette classe.
+                </p>
+            </div>
+            <div class="quizz_dix">
+                <div class="cercle">
+                    <p class="cercle_un">10</p>
+                </div>
+                <div class="conteneur_dix">
+                    <p class="titre_dix"><strong>Combien de règles peut contenir un fichier CSS ?</strong></p>
+                    <ul class="liste_dix"style="list-style: none;">
+                        <li id="reponse_un"data-choix-type="10" data-valeur-type="true">Il n'y a pas de limite, on peut en créer autant que l'on veut</li>
+                        <li id="reponse_deux"data-choix-type="10" data-valeur-type="false">Si le poids du fichier n'excède pas 20Ko, c'est tout bon</li>
+                        <li id="reponse_trois"data-choix-type="10" data-valeur-type="false">150</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="correction">
+                <p class="correctif"> Un fichier CSS n'est limité ni par son poids, ni par le nombre de ses règles. Vous pouvez donc coder de gros fichiers.
+                    Mais pensez quand même à les optimiser, ce n'est pas la peine non plus de tenter le Guiness Book du plus long fichier CSS ! 
+                </p>
+            </div>
+            <div class="valider">
+                <p class="check">Valider les réponses</p>
+            </div>
+        </div>
+    </div>
+    <script src= "questionnaire.js"></script>
+</body>
+</html>

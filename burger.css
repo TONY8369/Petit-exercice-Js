@@ -1,0 +1,120 @@
+
+html 
+{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after 
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    background-color:#fff;
+    font-family: 'Raleway', sans-serif;
+}
+.menus
+{
+    width: 91%;
+    padding-right: 5%;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+}
+.menu
+{
+    background-color: #333;
+    width: 90vw;
+    height: 146vh;
+    margin-top: 6vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.1s ease-out;
+}
+.menu_ouvert > .menu
+{
+    visibility: visible;
+    opacity:1;
+    transition: visibility 0s, opacity 0.1s ease-out
+}
+.menu > a
+{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1vh;
+    color:#eee;
+}
+.fermer
+{
+    top: 80px;
+    right: 14vw;
+    position: fixed;
+}
+.lien1, .lien2, .lien3, .lien4, .lien5 
+{
+    text-align: center;
+}
+.page
+{
+    background-color: rgba(234, 231, 225, 0.5);
+    display:flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 3vw auto;
+}
+
+.gauche
+{
+    width:60%;
+}
+
+.droite
+{
+    width:40%;
+    padding: 5vw ;
+}
+
+.gauche img 
+{
+    width:100%;
+    height:auto;
+}
+.droite p
+{
+    font-size: 1em;
+    line-height: 2em;
+}
+.artiste 
+{
+    font-size: 0.7em;
+    padding-bottom: 4em;
+}
+.droite h1 
+{
+    font-family: 'Lora', serif;
+    font-size: 4em;
+    padding-bottom: 1em;
+    font-style: italic;
+}
+
+@media screen and (max-width: 900px) 
+{
+    .gauche
+    {
+        width:100%;
+    }
+    .droite
+    {
+        width:100%;
+        padding: 5vw ;
+    }
+}

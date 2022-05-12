@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire_pizza.css">
+    <title>Formulaire de Pizza</title>
+</head>
+<body>
+    <div id="page">
+        <div class="titre">
+            <h1>PIZZA DU VRAI SUD</h1>
+        </div>
+        <div class="reine">
+            <p class="type"class="choix"data-liste="Reine"><strong>Reine</strong> : Tomate, Jambon, Fromage, Olives</p>
+            <span></span>
+            <p class="prix"data-prix ="8"><strong>8€</strong></p>
+            <p class="moin"data-soustraire ="reine">-</p>
+            <p class="nombre"data-nombre="0"><strong>0</strong></p>
+            <p class="plus"data-ajout="reine">+</p>
+            <p class="somme"data-somme="0"><strong>0€</strong></p>
+        </div>
+        <div class="reine_blanche">
+            <p class="type2"class="choix"data-liste="Reine-Blanche"><strong>Reine-Blanche</strong> : Crème, Jambon, Fromage, Olives</p>
+            <span></span>
+            <p class="prix"data-prix ="8"><strong>8€</strong></p>
+            <p class="moin"data-soustraire ="reine_blanche">-</p>
+            <p class="nombre"data-nombre="0"><strong>0</strong></p>
+            <p class="plus"data-ajout="reine_blanche">+</p>
+            <p class="somme"data-somme="0"><strong>0€</strong></p>
+        </div>
+        <div class="napolitaine">
+            <p class="type3"class="choix"data-liste="Napolitaine"><strong>Napolitaine</strong> : Tomate, Fromage, Anchois, Olives</p>
+            <span></span>
+            <p class="prix"data-prix ="9"><strong>9€</strong></p>
+            <p class="moin"data-soustraire="napolitaine">-</p>
+            <p class="nombre"data-nombre="0"><strong>0</strong></p>
+            <p class="plus"data-ajout="napolitaine">+</p>
+            <p class="somme"data-somme="0"><strong>0€</strong></p>
+        </div>
+        <div class="estoril">
+            <p class="type4"class="choix"data-liste="Estoril"><strong>Estoril</strong> : Tomate, Fromage, Chorizo, Olives</p>
+            <span></span>
+            <p class="prix"data-prix ="10"><strong>10€</strong></p>
+            <p class="moin"data-soustraire="estoril">-</p>
+            <p class="nombre"data-nombre="0"><strong>0</strong></p>
+            <p class="plus"data-ajout="estoril">+</p>
+            <p class="somme"data-somme="0"><strong>0€</strong></p>
+        </div>
+        <div class="aubergine">
+            <p class="type5"class="choix"data-liste="Aubergine"><strong>Aubergine</strong> : Tomate, Fromage, Aubergine, Huile au basilic, Olives</p>
+            <span></span>
+            <p class="prix"data-prix ="11"><strong>11€</strong></p>
+            <p class="moin"data-soustraire="aubergine">-</p>
+            <p class="nombre"data-nombre="0"><strong>0</strong></p>
+            <p class="plus"data-ajout="aubergine">+</p>
+            <p class="somme"data-somme="0"><strong>0€</strong></p>
+        </div>
+        <div class="royale">
+            <p class="type6"class="choix"data-liste="Royale"><strong>Royale</strong> : Tomate, Jambon, Fromage, Champignions, Olives</p>
+            <span></span>
+            <p class="prix"data-prix ="11"><strong>11€</strong></p>
+            <p class="moin"data-soustraire="royale">-</p>
+            <p class="nombre"data-nombre="0"><strong>0</strong></p>
+            <p class="plus"data-ajout="royale">+</p>
+            <p class="somme"data-somme="0"><strong>0€</strong></p>
+        </div>
+        <div class="speciale">
+            <p class="type7"class="choix"data-liste="spéciale"><strong>La spéciale</strong> : Tomate, Fromage, Chorizo, Merguez, Olives</p>
+            <span></span>
+            <p class="prix"data-prix ="12"><strong>12€</strong></p>
+            <p class="moin"data-soustraire="speciale">-</p>
+            <p class="nombre"data-nombre="0"><strong>0</strong></p>
+            <p class="plus"data-ajout="speciale">+</p>
+            <p class="somme"data-somme="0"><strong>0€</strong></p>
+        </div>
+        <div class="total">
+            <span id="sommeTotal"data-sommeTotal><strong>Total: 0€</strong></span>   
+        </div>
+    </div>
+    <div id="smart-button-container">
+        <div style="text-align: center;">
+            <div id="paypal-button-container"></div>
+        </div>
+    </div>
+    <div class="liste">
+        <p class="liste_commande">Votre commande est :</p>
+    </div>
+    <script src= "formulaire_pizza.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+</body>
+</html>

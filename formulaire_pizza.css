@@ -1,0 +1,340 @@
+/* 
+Debut du css
+*/
+#page
+{
+    background-color: white;
+    font-family: sans-serif;
+}
+.titre
+{
+    text-align: center;
+    background-color: #f3f3f3;
+    border: solid white;
+}
+/* première ligne */
+.reine
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.type
+{
+    width: 17%;
+}
+.reine > span
+{
+    width: 722px;
+    height: 4px;
+    border-radius: 5px;
+    background: silver;
+    display: block;
+    margin-top: 28px;
+}
+.prix
+{
+    width: 2%;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.moin
+{
+    width: 2%;
+    text-align: center;
+    cursor: pointer;
+    background-color: cadetblue;
+}
+.nombre
+{
+    background-color: silver;
+    width: 2%;
+    text-align: center;
+    border-radius: 5px;
+    height: 25px;
+}
+.plus
+{
+    width: 2%;
+    text-align: center;
+    cursor: pointer;
+    background-color: burlywood;
+}
+.somme
+{
+    width: 7.5%;
+    text-align: end;
+    background-color:whitesmoke;
+}
+/* Deuxième lignes*/
+.reine_blanche
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.reine_blanche > span
+{
+    width: 665px;
+    height: 4px;
+    border-radius: 5px;
+    background: silver;
+    display: block;
+    margin-top: 28px;
+}
+.type2
+{
+    width: 20%;
+}
+/*Troisième lignes */
+.napolitaine
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.napolitaine > span
+{
+    width: 683px;
+    height: 4px;
+    border-radius: 5px;
+    background: silver;
+    display: block;
+    margin-top: 28px;
+}
+.type3
+{
+    width: 19%;
+}
+/* Quatrième lignes */
+.estoril
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.estoril > span
+{
+    width: 702px;
+    height: 4px;
+    border-radius: 5px;
+    background: silver;
+    display: block;
+    margin-top: 28px;
+}
+.type4
+{
+    width: 18%;
+}
+/* Cinquième lignes */
+.aubergine
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aubergine > span
+{
+    width: 570px;
+    height: 4px;
+    border-radius: 5px;
+    background: silver;
+    display: block;
+    margin-top: 28px;
+}
+.type5
+{
+    width: 25%;
+}
+/* Sixième lignes */
+.royale
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.royale > span
+{
+    width: 609px;
+    height: 4px;
+    border-radius: 5px;
+    background: silver;
+    display: block;
+    margin-top: 28px;
+}
+.type6
+{
+    width: 23%;
+}
+/* Septième lignes */
+.speciale
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.speciale > span
+{
+    width: 610px;
+    height: 4px;
+    border-radius: 5px;
+    background: silver;
+    display: block;
+    margin-top: 28px;
+}
+.type7
+{
+    width: 23%;
+}
+/* ligne total */
+.total
+{
+    text-align: end;
+    width: 72%;
+}
+#sommeTotal
+{
+    padding: 10px;
+    padding-right: 18px;
+}
+/* Bouton payer maintenant */
+.valider
+{
+    background-color: #f3f3f3;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.active#paypal-button-container
+{
+    display: block;
+}
+#paypal-button-container
+{
+    text-align: center;
+    vertical-align: top;
+    margin-left: 40vw;
+    margin-top: 30px;
+	width: 300px;
+    height: 15vh;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 1.2em;
+    color: white;
+    padding-top: 4px;
+    cursor: pointer;
+    display: none;
+}
+/* Liste commande pizza */
+.liste
+{
+    background-color: white;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.liste_commande
+{
+    background-color: #f3f3f3;
+    border: solid black;
+    text-align: center;
+    width: 50%;
+    height: 15vh;
+    color: cadetblue;
+    font-size: 15px;
+    display: none;
+}
+.active.liste_commande
+{
+    display: block;
+}
+
+/*rendre le site parfaitement responsive */
+
+@media screen and (max-width: 600px)
+{
+    .reine{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .type{
+        width:70%;
+        font-size: 15px;
+    }
+    .reine > span{
+        width: 100px;
+    }
+    .reine_blanche{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .type2{
+        width:85%;
+        font-size: 15px;
+    }
+    .reine_blanche > span{
+       width: 35px
+    }
+    .prix{
+        margin-left: 2px;
+    }
+    .napolitaine{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .type3{
+        width:80%;
+        font-size: 15px;
+    }
+    .napolitaine > span{
+       width: 60px
+    }
+    .estoril{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .type4{
+        width:70%;
+        font-size: 15px;
+    }
+    .estoril > span{
+       width: 98px;
+    }
+    .aubergine{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .type5{
+        width:70%;
+        font-size: 15px;
+    }
+    .aubergine > span{
+       width: 98px;
+    }
+    .royale{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .type6{
+        width:60%;
+        font-size: 15px;
+    }
+    .royale > span{
+       width: 140px;
+    }
+    .speciale{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .type7{
+        width:60%;
+        font-size: 15px;
+    }
+    .speciale > span{
+       width: 140px;
+    }
+    #paypal-button-container{
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .liste_commande{
+        margin: auto;
+        margin-top: 30px;
+    }
+}
